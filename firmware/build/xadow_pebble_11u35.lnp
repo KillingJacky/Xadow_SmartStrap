@@ -1,0 +1,46 @@
+--cpu Cortex-M0
+".\build\hdlc.o"
+".\build\pebbleserial.o"
+".\build\main.o"
+".\build\usbaudio.o"
+".\build\usbhal_kl25z.o"
+".\build\usbhal_stm32f4.o"
+".\build\usbhal_lpc17.o"
+".\build\usbhal_lpc11u.o"
+".\build\usbhal_lpc40.o"
+".\build\usbhal_rz_a1h.o"
+".\build\usbhal_maxim.o"
+".\build\usbdevice.o"
+".\build\usbmouse.o"
+".\build\usbkeyboard.o"
+".\build\usbmousekeyboard.o"
+".\build\usbhid.o"
+".\build\usbmidi.o"
+".\build\usbserial.o"
+".\build\usbcdc.o"
+".\build\usbmsd.o"
+".\build\bufferedserial.o"
+".\build\buffer.o"
+".\build\xadowgps.o"
+".\build\xadownfc.o"
+--library_type=microlib --strict --scatter "mbed/TARGET_LPC11U24/TOOLCHAIN_ARM_MICRO/LPC11U24.sct"
+
+
+            
+              mbed/TARGET_LPC11U24/TOOLCHAIN_ARM_MICRO/sys.o
+            
+              mbed/TARGET_LPC11U24/TOOLCHAIN_ARM_MICRO/startup_LPC11xx.o
+            
+              mbed/TARGET_LPC11U24/TOOLCHAIN_ARM_MICRO/board.o
+            
+              mbed/TARGET_LPC11U24/TOOLCHAIN_ARM_MICRO/system_LPC11Uxx.o
+            
+              mbed/TARGET_LPC11U24/TOOLCHAIN_ARM_MICRO/cmsis_nvic.o
+            
+              mbed/TARGET_LPC11U24/TOOLCHAIN_ARM_MICRO/retarget.o
+            
+              mbed/TARGET_LPC11U24/TOOLCHAIN_ARM_MICRO/mbed.ar
+            
+            --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\build\xadow_pebble_11u35.map" -o .\build\xadow_pebble_11u35.axf
